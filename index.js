@@ -3,7 +3,6 @@ const Parser = require("rss-parser");
 let parser = new Parser();
 const app = express()
 const admin = require('firebase-admin');
-var serviceAccount = require("./data.json");
 const { getMessaging } = require('firebase-admin/messaging');
 require('dotenv').config()
 
