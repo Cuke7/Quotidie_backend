@@ -24,7 +24,7 @@ admin.initializeApp({
     databaseURL: "https://quotidie-282b4-default-rtdb.europe-west1.firebasedatabase.app"
 });
 
-app.get('/', async (req, res) => {
+app.get('/notifs', async (req, res) => {
 
     let feed = await parser.parseURL("https://rss.aelf.org/evangile");
     let title = "";
